@@ -9,31 +9,37 @@
 </head>
 <body>
     <main>
-        <header role="banner" class="flyingLotus">
-             <!--img src="Assets/lotus.png" alt="Picture of a lotus flower"-->
+        <header role="banner" class="header">
+             <img src="Assets/lotus.png" alt="Picture of a lotus flower" class="flyingLotus image">
         </header>
         <section role="hold quiz templates" class="eternalBox">
             
-            <!--Grey box for the quiz start-->
+            <!--Box for the quiz start-->
             <section class="startQuiz box">
                 <section class="keepTrackBox">
-                    <ul class="keepTrack">
-                        <li>Question: 0/11</li>
-                        <li>Score: 0</li>
+                    <ul class="keepTrack sizeMe">
+                        <li>Question: 
+                           <span class="questionNumber">0</span>/11</li>
+                        <li>Score: 
+                            <span class="score">0</span>
+                        </li>
                     </ul>
                 </section>
                 <h1>Meditation Quiz</h1>
                 <h2>Test your Zenness</h2>
-                <!--img src="Assets/person_meditating.jpg" alt="Drawing of a meditating person"-->
+                <img src="Assets/person_meditating.jpg" alt="Drawing of a meditating person" class="image">
                 <button type="button" class="startButton button">Start</button>
             </section>
 
-            <!--Grey box for the quiz questions-->
-            <section class="questionBox box">
+            <!--Box for the quiz questions-->
+            <section class="questionBox box altBox">
                 <section class="keepTrackBox">
-                    <ul class="keepTrack">
-                        <li>Question: 0/11</li>
-                        <li>Score: 0</li>
+                    <ul class="keepTrack sizeMe">
+                        <li>Question: 
+                           <span class="questionNumber">0</span>/11</li>
+                        <li>Score: 
+                            <span class="score">0</span>
+                        </li>
                     </ul>
                 </section>
                 <span class="quizQuestion">
@@ -55,47 +61,56 @@
                 <button type="button" class="submitButton button">Submit</button>
             </section>
 
-            <!--Grey box for answering correctly-->
-            <section class="rightBox box">
+            <!--Box for answering correctly-->
+            <section class="rightBox box altBox">
                 <section class="keepTrackBox">
-                    <ul class="keepTrack">
-                        <li>Question: 0/11</li>
-                        <li>Score: 0</li>
+                    <ul class="keepTrack sizeMe">
+                        <li>Question: 
+                           <span class="questionNumber">0</span>/11</li>
+                        <li>Score: 
+                            <span class="score">0</span>
+                        </li>
                     </ul>
                 </section>
                 <h3>Correct!</h3>
-                <!--img src="Assets/laughing_buddha.jpg" alt="Picture of a laughing Buddha statue"-->
+                <img src="Assets/laughing_buddha.jpg" alt="Picture of a laughing Buddha statue" class="image">
                 <span class="answerText">Answer text goes here.</span>
                 <span class="explanationText">An explanation goes here.</span>
                 <button type="button" class="nextButton button">Next</button>
             </section> 
 
-            <!--Grey box for answering incorrectly-->
-            <section class="wrongBox box">
+            <!--Box for answering incorrectly-->
+            <section class="wrongBox box altBox">
                 <section class="keepTrackBox">
-                    <ul class="keepTrack">
-                        <li>Question: 0/11</li>
-                        <li>Score: 0</li>
+                    <ul class="keepTrack sizeMe">
+                        <li>Question: 
+                           <span class="questionNumber">0</span>/11</li>
+                        <li>Score: 
+                            <span class="score">0</span>
+                        </li>
                     </ul>
                 </section>
                 <h3>Oops! Wrong answer.</h3>
-                <!--img src="Assets/crying_buddha.jpg" alt="Picture of a crying Buddha statue"-->
+                <img src="Assets/crying_buddha.jpg" alt="Picture of a crying Buddha statue" class="image">
                 <span class="answerText">Answer text goes here.</span>
                 <span class="explanationText">An explanation goes here.</span>
                 <button type="button" class="nextButton button">Next</button>
             </section>
 
-            <!--Grey box for final score and restarting-->
-            <section class="reincarnateBox box">
+            <!--Box for final score and restarting-->
+            <section class="reincarnateBox box altBox">
                 <section class="keepTrackBox">
-                    <ul class="keepTrack">
-                        <li>Question: 0/11</li>
-                        <li>Score: 0</li>
+                    <ul class="keepTrack sizeMe">
+                        <li>Question: 
+                           <span class="questionNumber">0</span>/11</li>
+                        <li>Score: 
+                            <span class="score">0</span>
+                        </li>
                     </ul>
                 </section>
                 <h3>You've reached the end!</h3>
                 <h3>Your score is X</h3>
-                <!--img src="Assets/recycle.png" alt="Picture of the recycle symbol"-->
+                <img src="Assets/recycle.png" alt="Picture of the recycle symbol" class="image">
                 <span class="reincarnationText">
                     Your score wasn't quite that perfect though.</br>
                     Maybe you should reincarnate and try again?
@@ -104,16 +119,19 @@
             </section>
 
             <!--Alternative grey box for final score and restarting-->
-            <section class="enlightenedBox box">
+            <section class="enlightenedBox box altBox">
                 <section class="keepTrackBox">
-                    <ul class="keepTrack">
-                        <li>Question: 0/11</li>
-                        <li>Score: 0</li>
+                    <ul class="keepTrack sizeMe">
+                        <li>Question: 
+                           <span class="questionNumber">0</span>/11</li>
+                        <li>Score: 
+                            <span class="score">0</span>
+                        </li>
                     </ul>
                 </section>
                 <h3>You've reached the end!</h3>
                 <h3>Your score is X</h3>
-                <!--img src="Assets/enlightened_flower.jpg" alt="Graphic of a lotus emitting light"-->
+                <img src="Assets/enlightened_flower.jpg" alt="Graphic of a lotus emitting light" class="image">
                 <span class="enlightenedText">
                     Perfect score! You must be enlightened.</br>
                     But hey, you can still reincarnate if you want.
@@ -121,8 +139,8 @@
                 <button type="button" class="reincarnateButton button">Reincarnate</button>
             </section>
         </section>
-
     </main>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>   
 </body>
 </html>
