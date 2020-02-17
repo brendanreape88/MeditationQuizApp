@@ -29,7 +29,7 @@ const STORE = [
         '(A) 5000 BCE in India',
     
       explanation:
-        '(A) The earliest accounts of meditation are found in wall arts in the Indian subcontinent around 5000 BCE, depicting practitioners sitting in meditative postures with partially closed eyes.'
+        'The earliest accounts of meditation are found in wall arts in the Indian subcontinent around 5000 BCE, depicting practitioners sitting in meditative postures with partially closed eyes.'
     },
     {
       question:
@@ -45,7 +45,7 @@ const STORE = [
         '(B) 200 - 500 million',
     
       explanation:
-        '(B) 200 - 500 million people globally are estimated to be regular practitioners of meditation, a number that has increased substantially in the last decade.'
+        '200 - 500 million people globally are estimated to be regular practitioners of meditation, a number that has increased substantially in the last decade.'
     },
     {
       question: 'In the United States, the most common reason people learn to meditate is:',
@@ -60,7 +60,7 @@ const STORE = [
         '(D) To reduce stress', 
       
       explanation:
-      '(D) While people’s motivations for learning the practice of mediation are various, the majority of people living in the US pick it up to deal with stress.'
+      'While people’s motivations for learning the practice of mediation are various, the majority of people living in the US pick it up to deal with stress.'
     },
     {
       question:
@@ -75,7 +75,7 @@ const STORE = [
         '(A) Focused attention, open monitoring',
     
       explanation:
-        '(A) While there’s a seemingly endless amount of meditative styles, at their core they all take one of these two approaches: (1) Focused attention: where one focuses on an internal or external object of awareness (2) Open monitoring: where one allows the objects of their awareness to pass by without analysis or judgment.'
+        'While there’s a seemingly endless amount of meditative styles, at their core they all take one of these two approaches: (1) Focused attention: where one focuses on an internal or external object of awareness (2) Open monitoring: where one allows the objects of their awareness to pass by without analysis or judgment.'
     },
     {
       question: 'Meditation capitalizes on and enhances the brain’s ability to constantly change. The brain’s ability is known as:',
@@ -89,7 +89,7 @@ const STORE = [
       '(D) neuroplasticity',
       
       explanation:
-      '(D) Neuroplasticity refers to the brain’s ability change due to experience. The brain is estimated to have over 100 trillion connections between neurons--1,000 times more connections than there are stars in the Milky Way Galaxy. Up to 70% of these connections can change in a single day!'
+      'Neuroplasticity refers to the brain’s ability change due to experience. The brain is estimated to have over 100 trillion connections between neurons--1,000 times more connections than there are stars in the Milky Way Galaxy. Up to 70% of these connections can change in a single day!'
     },
     {
       question:
@@ -105,7 +105,7 @@ const STORE = [
         '(D) All of the above',
 
       explanation:
-        '(D) Research shows that regular meditation is not only effective at reducing stress, but can improve physical health (including heart health), mental health (including psychological and cognitive states), and even slow down the aging process!'
+        'Research shows that regular meditation is not only effective at reducing stress, but can improve physical health (including heart health), mental health (including psychological and cognitive states), and even slow down the aging process!'
     },
     {
       question: 'Research on in-school meditation programs has shown that participating students benefit in which of the following ways?',
@@ -120,7 +120,7 @@ const STORE = [
         '(D) All of the above',
 
       explanation:
-        '(D) Meditation is effective and reducing students’ stress, which has been shown to lead to numerous beneficial academic outcomes.'
+        'Meditation is effective and reducing students’ stress, which has been shown to lead to numerous beneficial academic outcomes.'
     },
     {
       question: 'A common misconception about meditation is that:',
@@ -135,7 +135,7 @@ const STORE = [
         '(D) All of the above',
 
       explanation:
-        '(D) While all of these are common misconceptions about meditation, perhaps the most prevalent is that it’s a difficult skill to perform. Fortunately, this isn’t true at all. Anyone can begin the practice of meditation and make significant progress in their abilities to focus and maintain a non-judgmental state of awareness.'
+        'While all of these are common misconceptions about meditation, perhaps the most prevalent is that it’s a difficult skill to perform. Fortunately, this isn’t true at all. Anyone can begin the practice of meditation and make significant progress in their abilities to focus and maintain a non-judgmental state of awareness.'
     },
     {
       question:
@@ -151,7 +151,7 @@ const STORE = [
         '(B) Breathing',
      
       explanation:
-      '(B) One of the most popular methods of meditation has practitioners gently focus on their breath for extended periods of time.',
+      'One of the most popular methods of meditation has practitioners gently focus on their breath for extended periods of time.',
     },
     {
         question:
@@ -168,7 +168,7 @@ const STORE = [
             '(D) All of the above',
 
       explanation:
-        '(D) Thankfully it’s easier than ever for anyone to learn to meditate. There are thousands of effective resources available in the forms of books, apps, Youtube videos, and internet and magazine articles. However, some people greatly benefit from the traditional method of one-on-one instruction, which today is more accessible than ever.'
+        'Thankfully it’s easier than ever for anyone to learn to meditate. There are thousands of effective resources available in the forms of books, apps, Youtube videos, and internet and magazine articles. However, some people greatly benefit from the traditional method of one-on-one instruction, which today is more accessible than ever.'
       }
   ];
 
@@ -183,7 +183,7 @@ function generateQuestion() {
     } else {
       $('.questionBox').hide();
       finalScore();
-      $('.questionNumber').text(10); /*Or should the .text be .text(11)?*/
+      $('.questionNumber').text(11); /*Or should the .text be .text(11)?*/
     }
   }
 
@@ -223,7 +223,7 @@ function startQuiz() {
     });
   }
 
-/*
+
 
 //submits a selected answer and checks it against the correct answer
 //runs answer functions accordingly
@@ -245,7 +245,8 @@ function submitAnswer() {
 
 //creates html for question form
 function createThing(questionIndex) {
-    let formMaker = $(`<form>
+    let formMaker = $(
+    `<form>
       <fieldset>
         <legend class="questionText">${STORE[questionIndex].question}</legend>
       </fieldset>
@@ -268,9 +269,9 @@ function createThing(questionIndex) {
 //increments user score by one
 function correctAnswer() {
     $('.response').html(
-      `<h3>Your answer is correct!</h3>
-      <img src="images/correct.jpg" alt="monkey wearing glasses" class="images" width="200px">
-        <p class="sizeMe">You're a smart monkey!</p>
+    `<h3>Correct!</h3>
+      <img src="Assets/laughing_buddha.jpg" alt="picture of a laughing buddha statue" class="images" width="100px">
+        <p class="sizeMe">${STORE[questionNumber].explanation}</p>
         <button type="button" class="nextButton button">Next</button>`
     );
     updateScore();
@@ -279,10 +280,11 @@ function correctAnswer() {
 //resulting feedback if a selected answer is incorrect
 function wrongAnswer() {
     $('.response').html(
-      `<h3>That's the wrong answer...</h3>
-      <img src="images/wrong.jpg" alt="dissapointed monkey face" class="images" width="200px">
+    `<h3>Oops! Wrong answer.</h3>
+      <img src="Assets/crying_buddha.jpg" alt="picture of a crying buddha statue" class="images" width="100px">
       <p class="sizeMe">It's actually:</p>
       <p class="sizeMe">${STORE[questionNumber].correctAnswer}</p>
+      <p class="sizeMe">${STORE[questionNumber].explanation}</p>
       <button type="button" class="nextButton button">Next</button>`
     );
   }
@@ -302,30 +304,21 @@ function wrongAnswer() {
     $('.final').show();
   
     const great = [
-      'Great job!',
-      'images/win.jpg',
-      'cheering monkey',
-      'You sure know a lot about monkeys!'
-    ];
-  
-    const good = [
-      'Good, not great.',
-      'images/read.jpg',
-      'monkey reading a book',
-      'You should keep studying about monkeys...'
+      'You have reached the end!',
+      'Assets/enlightened_flower.jpg',
+      'picture of a flower radiating light',
+      'You must be enlightened! But hey, you can still reincarnate if you want.'
     ];
   
     const bad = [
-      'Do you even know what monkeys look like?',
-      'images/end.png',
-      'cat in a monkey costume',
-      'Or are you more of a cat person?'
+      'You have reached the end!',
+      'Assets/recycle.png',
+      'picture of the recycle logo',
+      'Your score was not quite that perfect though. Maybe you should reincarnate and try again?'
     ];
   
-    if (score >= 8) {
+    if (score >= 11) {
       array = great;
-    } else if (score < 8 && score >= 5) {
-      array = good;
     } else {
       array = bad;
     }
@@ -348,7 +341,7 @@ function wrongAnswer() {
     });
   }
 
-*/
+
 
 //runs the functions
   function makeQuiz() {

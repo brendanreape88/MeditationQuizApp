@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: sans-serif;
-    color: #371d0d;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: black;
     background-color: rgb(0, 153, 255);
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .eternalBox {
-    
+    color: white;
 }
 
 .box {
@@ -60,7 +60,7 @@ h2 {
     font-size: 1em;
 }
 
-.image {
+.images {
     width: 100px;
     height: 100px;
 }

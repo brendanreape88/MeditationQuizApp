@@ -6,6 +6,7 @@
     <meta name="Meditation Quiz App" content="A quiz that tests your knowledge about the practice of meditation">
     <title>Meditation Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -13,10 +14,18 @@
              <img src="Assets/lotus.png" alt="Picture of a lotus flower" class="flyingLotus image">
         </header>
         <section role="hold quiz templates" class="eternalBox">
-            
+            <section class="keepTrackBox">
+                <ul class="keepTrack sizeMe">
+                   <li>Question: 
+                      <span class="questionNumber">0</span>/11</li>
+                   <li>Score: 
+                       <span class="score">0</span>
+                   </li>
+               </ul> 
+            </section>
             <!--Box for the quiz start-->
             <section class="startQuiz box">
-                <section class="keepTrackBox">
+                <!--section class="keepTrackBox">
                     <ul class="keepTrack sizeMe">
                         <li>Question: 
                            <span class="questionNumber">0</span>/11</li>
@@ -24,16 +33,16 @@
                             <span class="score">0</span>
                         </li>
                     </ul>
-                </section>
+                </section-->
                 <h1>Meditation Quiz</h1>
                 <h2>Test your Zenness</h2>
-                <img src="Assets/person_meditating.jpg" alt="Drawing of a meditating person" class="image">
+                <img src="Assets/person_meditating.jpg" alt="Drawing of a meditating person" class="images">
                 <button type="button" class="startButton button">Start</button>
             </section>
 
             <!--Box for the quiz questions-->
             <section class="questionBox box altBox">
-                <section class="keepTrackBox">
+                <!--section class="keepTrackBox">
                     <ul class="keepTrack sizeMe">
                         <li>Question: 
                            <span class="questionNumber">0</span>/11</li>
@@ -41,8 +50,8 @@
                             <span class="score">0</span>
                         </li>
                     </ul>
-                </section>
-                <span class="quizQuestion">
+                </section-->
+                <!--span class="quizQuestion">
                     Meditation is generally considered to be which of the following?
                 </span>
                 <form>
@@ -53,17 +62,17 @@
                                 <input class="radio" type="radio" id="" value="" name="answer" required>Here's a possible answer</br>
                                 <input class="radio" type="radio" id="" value="" name="answer" required>Here's a possible answer</br>
                                 <input class="radio" type="radio" id="" value="" name="answer" required>Here's a possible answer</br>
-                                <!--span>answer value</span-->
+                                <span>answer value</span>
                             </label>
                         </legend>
                     </fieldset>
                 </form>
-                <button type="button" class="submitButton button">Submit</button>
+                <button type="button" class="submitButton button">Submit</button-->
             </section>
 
-            <!--Box for answering correctly-->
-            <section class="rightBox box altBox">
-                <section class="keepTrackBox">
+            <!--Box shows after answer is submitted-->
+            <section class="response box altBox">
+                <!--section class="keepTrackBox">
                     <ul class="keepTrack sizeMe">
                         <li>Question: 
                            <span class="questionNumber">0</span>/11</li>
@@ -71,15 +80,15 @@
                             <span class="score">0</span>
                         </li>
                     </ul>
-                </section>
-                <h3>Correct!</h3>
+                </section-->
+                <!--h3>Correct!</h3>
                 <img src="Assets/laughing_buddha.jpg" alt="Picture of a laughing Buddha statue" class="image">
                 <span class="answerText">Answer text goes here.</span>
                 <span class="explanationText">An explanation goes here.</span>
-                <button type="button" class="nextButton button">Next</button>
+                <button type="button" class="nextButton button">Next</button-->
             </section> 
 
-            <!--Box for answering incorrectly-->
+            <!--Box for answering incorrectly>
             <section class="wrongBox box altBox">
                 <section class="keepTrackBox">
                     <ul class="keepTrack sizeMe">
@@ -95,11 +104,11 @@
                 <span class="answerText">Answer text goes here.</span>
                 <span class="explanationText">An explanation goes here.</span>
                 <button type="button" class="nextButton button">Next</button>
-            </section>
+            </section-->
 
             <!--Box for final score and restarting-->
-            <section class="reincarnateBox box altBox">
-                <section class="keepTrackBox">
+            <section class="final box altBox">
+                <!--section class="keepTrackBox">
                     <ul class="keepTrack sizeMe">
                         <li>Question: 
                            <span class="questionNumber">0</span>/11</li>
@@ -115,10 +124,10 @@
                     Your score wasn't quite that perfect though.</br>
                     Maybe you should reincarnate and try again?
                 </span>
-                <button type="button" class="reincarnateButton button">Reincarnate</button>
+                <button type="button" class="reincarnateButton button">Reincarnate</button-->
             </section>
 
-            <!--Alternative grey box for final score and restarting-->
+            <!--Alternative grey box for final score and restarting>
             <section class="enlightenedBox box altBox">
                 <section class="keepTrackBox">
                     <ul class="keepTrack sizeMe">
@@ -137,7 +146,7 @@
                     But hey, you can still reincarnate if you want.
                 </span>
                 <button type="button" class="reincarnateButton button">Reincarnate</button>
-            </section>
+            </section-->
         </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
