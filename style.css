@@ -116,6 +116,10 @@ legend {
   border: 0.1em #371d0d solid;
 }
 
+fieldset {
+    border: none;
+}
+
 .final {
   display: block;
 }
