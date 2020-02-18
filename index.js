@@ -246,7 +246,7 @@ function submitAnswer() {
 //creates html for question form
 function createThing(questionIndex) {
     let formMaker = $(
-    `<form>
+    `<form class="form'>
       <fieldset>
         <legend class="questionText">${STORE[questionIndex].question}</legend>
       </fieldset>
@@ -327,7 +327,7 @@ function wrongAnswer() {
         <img src="${array[1]}" alt="${array[2]}" class="images">
           <h3>Your score is ${score} / 10</h3>
           <p class="sizeMe">${array[3]}</p>
-          <button type="submit" class="restartButton button">Restart</button>`
+          <button type="submit" class="restartButton button">Reincarnate</button>`
     );
   }
   
