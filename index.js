@@ -183,7 +183,7 @@ function generateQuestion() {
     } else {
       $('.questionBox').hide();
       finalScore();
-      $('.questionNumber').text(11); /*Or should the .text be .text(11)?*/
+      $('.questionNumber').text(11); 
     }
   }
 
@@ -246,13 +246,14 @@ function submitAnswer() {
 //creates html for question form
 function createThing(questionIndex) {
     let formMaker = $(
-    `<form class="form'>
+    `<form class="form">
       <fieldset>
         <legend class="questionText">${STORE[questionIndex].question}</legend>
+      <div class='questionGroup'></div>
       </fieldset>
     </form>`)
   
-    let fieldSelector = $(formMaker).find('fieldset');
+    let fieldSelector = $(formMaker).find('fieldset .questionGroup');
   
     STORE[questionIndex].answers.forEach(function (answerValue, answerIndex) {
       $(`<label class="sizeMe" for="${answerIndex}">
@@ -261,7 +262,7 @@ function createThing(questionIndex) {
         </label>
         `).appendTo(fieldSelector);
     });
-    $(`<button type="submit" class="submitButton button"> Submit</button > `).appendTo(fieldSelector);
+    $(`<button type="submit" class="submitButton button"> Submit</button > `).appendTo(formMaker);
     return formMaker;
   }
 

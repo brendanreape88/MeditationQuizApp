@@ -100,7 +100,7 @@ legend {
 .button {
   margin-left: auto;
   margin-right: auto;
-  width: 5em;
+  width: 6em;
   height: 3em;
   cursor: pointer;
   font-family: 'M PLUS 1p', sans-serif;
@@ -122,6 +122,10 @@ fieldset {
 
 .final {
   display: block;
+}
+
+.questionGroup {
+  margin: 20% 0;
 }
 
 @media only screen and (min-width: 600px) {
