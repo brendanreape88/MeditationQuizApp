@@ -72,7 +72,7 @@ const STORE = [
   },
   {
     question:
-      "Meditation capitalizes on and enhances the brain’s ability to constantly change. The brain’s ability is known as:",
+      "Meditation enhances the brain’s ability to change when encountering new experiences. This ability is known as:",
     answers: [
       "(A) ventromediality",
       "(B) pluralmasticity",

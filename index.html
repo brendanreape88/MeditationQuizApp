@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Meditation Quiz App" content="A quiz that tests your knowledge about the practice of meditation">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Meditation Quiz App"
+      content="A quiz that tests your knowledge about the practice of meditation"
+    />
     <title>Meditation Quiz</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800,900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=M+PLUS+1p:400,500,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <header role="banner" class="header">
-             <img src="Assets/lotus.png" alt="Picture of a lotus flower" class="flyingLotus image">
-        </header>
-        <section role="hold quiz templates" class="eternalBox">
-            <section class="keepTrackBox">
-                <ul class="keepTrack sizeMe">
-                   <li>Question: 
-                      <span class="questionNumber">0</span>/11</li>
-                   <li>Score: 
-                       <span class="score">0</span>
-                   </li>
-               </ul> 
-            </section>
-            <!--Box for the quiz start-->
-            <section class="startQuiz box">
-                <h1>Meditation Quiz</h1>
-                <h2>Test your Zenness</h2>
-                <img src="Assets/person_meditating.jpg" alt="Drawing of a meditating person" class="images">
-                <button type="button" class="startButton button">Start</button>
-            </section>
-
-            <!--Box for the quiz questions-->
-            <section class="questionBox box altBox">
-            </section>
-
-            <!--Box shows after answer is submitted-->
-            <section class="response box altBox">
-            </section> 
-
-            <!--Box for final score and restarting-->
-            <section class="final box altBox">
-            </section>
-            
+      <header role="banner" class="header">
+        <img
+          src="Assets/lotus.png"
+          alt="Picture of a lotus flower"
+          class="flyingLotus image"
+        />
+      </header>
+      <section role="hold quiz templates" class="eternalBox">
+        <section class="keepTrackBox">
+          <ul class="keepTrack sizeMe">
+            <li>Question: <span class="questionNumber">0</span>/11</li>
+            <li>
+              Score:
+              <span class="score">0</span>
+            </li>
+          </ul>
         </section>
+        <!--Box for the quiz start-->
+        <section class="startQuiz box">
+          <h1>Meditation Quiz</h1>
+          <h2>Test Your Zenness</h2>
+          <img
+            src="Assets/person_meditating.jpg"
+            alt="Drawing of a meditating person"
+            class="images"
+          />
+          <button type="button" class="startButton button">Start</button>
+        </section>
+
+        <!--Box for the quiz questions-->
+        <section class="questionBox box altBox"></section>
+
+        <!--Box shows after answer is submitted-->
+        <section class="response box altBox"></section>
+
+        <!--Box for final score and restarting-->
+        <section class="final box altBox"></section>
+      </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="index.js"></script>   
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
