@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 5%;
 }
 
@@ -54,6 +54,7 @@ body {
     margin: 1em;
     list-style: none;
     font-size: 1em;
+    font-weight: 500;
 }
 
 .startQuiz,
@@ -68,6 +69,7 @@ body {
   border: 0.1em #371d0d solid;
   background-color: white;
   font-size: 0.8em;
+  border-radius: 10px;
 }
 
 label {
@@ -79,18 +81,32 @@ label {
 
 .images {
   margin-bottom: 0.5em;
-  width: 50%;
+  width: 40%;
   max-width: 240px;
+  border-radius: 10px;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
-h1,
-h3,
-legend {
-  margin-bottom: 0.5em;
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2em
+}
+
+p, span, legend {
+  font-weight: 500;
+}
+
+.form {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .answerOption {
@@ -100,13 +116,14 @@ legend {
 .button {
   margin-left: auto;
   margin-right: auto;
-  width: 6em;
+  width: 6.5em;
   height: 3em;
   cursor: pointer;
   font-family: 'M PLUS 1p', sans-serif;
   border: 0.1em black solid;
   background-color: rgb(70, 0, 128);
   color: #ffffff;
+  border-radius: 10px;
 }
 
 .button:hover,
@@ -125,24 +142,37 @@ fieldset {
 }
 
 .questionGroup {
-  margin: 20% 0;
+  margin: 10% 0;
+}
+
+.final {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.questionBox {
+   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 600px) {
 .box {
     width: 600px;
     height: 600px;
-    padding: 10%;
+    padding-top: 20%;
     font-size: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    margin: auto;
+    /* margin: auto; */
     padding: 1em;
     border: 0.1em #371d0d solid;
     background-color: white;
+    border-radius: 10px;
 }
   
 @media only screen and (min-width: 800px) {  
@@ -150,8 +180,3 @@ fieldset {
 .flyingLotus {
     max-width: 100px;
 }
-.box{
-    width: 700px;
-    height: 700px;
-}
-  
